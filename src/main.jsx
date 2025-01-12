@@ -8,7 +8,8 @@ import Contat from "./Components/Contat.jsx";
 import Erro from "./Components/Erro.jsx";
 import Header from "./Components/Header.jsx";
 import CountryDetail from "./Components/CountryDetail.jsx";
-import CountryDetailShimmer from "./Components/countryDetailShimmer.jsx";
+import CountryDetailShimmer from "./Components/CountryDetailShimmer.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
