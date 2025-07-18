@@ -24,7 +24,7 @@ export default function CountryDetail() {
       region: data.region,
       subRegion: data.subregion,
       capital: data.capital?.join(", "),
-      tld: data.tld.join(" ,"),
+      tld: data.tld?.join(" ,"),
       currencies: Object.values(data.currencies || {})
         .map((currency) => currency.name)
         .join(" ,"),
