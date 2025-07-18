@@ -8,12 +8,10 @@ export default function CountriesList({ query }) {
 
   useEffect(() => {
     fetch(
-      "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital,tld,currencies,languages,subregion"
+      "https://restcountries.com/v3.1/all?fields=name,flags,region,population,capital,tld,currencies,languages,subregion,borders"
     )
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
-
         setCountriesData(data);
       });
   }, []);
